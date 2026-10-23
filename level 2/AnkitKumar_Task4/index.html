@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login & Register - Ankit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <!-- Toggle Tabs -->
+        <div class="tab-buttons">
+            <button id="loginTabBtn" class="tab-btn active" onclick="switchTab('login')">Login</button>
+            <button id="registerTabBtn" class="tab-btn" onclick="switchTab('register')">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginSection" class="form-section">
+            <h2>Welcome Back</h2>
+            <div class="input-group">
+                <label>Email or Username</label>
+                <input type="text" id="loginUser" placeholder="Enter username or email">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="loginPass" placeholder="Enter password">
+            </div>
+            <button id="loginBtn" class="primary-btn">Login</button>
+            <div id="loginError" class="error-msg"></div>
+        </div>
+
+        <!-- Register Form -->
+        <div id="registerSection" class="form-section hidden">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <label>Username / Email</label>
+                <input type="text" id="regUser" placeholder="Choose a username or email">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="regPass" placeholder="Min 8 chars with at least 1 number">
+            </div>
+            <button id="registerBtn" class="primary-btn">Register</button>
+            <div id="regError" class="error-msg"></div>
+            <div id="regSuccess" class="success-msg"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

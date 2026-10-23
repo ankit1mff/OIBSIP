@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter - Ankit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-box">
+        <h2>Temp Converter</h2>
+        <p class="tagline">Oasis Infobyte Task 3</p>
+
+        <div class="field">
+            <label>Enter Temperature</label>
+            <input type="text" id="tempInput" placeholder="e.g. 37">
+        </div>
+
+        <div class="field">
+            <label>Choose Unit</label>
+            <select id="unitSelect">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+
+        <button id="calcBtn">Convert</button>
+
+        <div id="errorBox" class="error"></div>
+
+        <div id="outputBox" class="output hidden">
+            <p>Celsius: <span id="cRes">-</span></p>
+            <p>Fahrenheit: <span id="fRes">-</span></p>
+            <p>Kelvin: <span id="kRes">-</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

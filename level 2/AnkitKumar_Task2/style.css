@@ -1,0 +1,132 @@
+/* Base Styles & Font Families */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333333;
+    line-height: 1.6;
+}
+
+#main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Header Section */
+.header-section {
+    background-color: #1e3d59; /* Background Color 1 */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#title {
+    font-family: 'Merriweather', serif; /* Font Style 1 for Headings */
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#tagline {
+    font-size: 16px;
+    color: #c1c8e4;
+    font-style: italic;
+
+}
+/* Biography Section */
+#tribute-info {
+    padding: 40px 30px;
+    background-color: #ffffff; /* Background Color 3 */
+}
+
+#tribute-info h2, #timeline-section h2 {
+    font-family: 'Merriweather', serif;
+    color: #1e3d59;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6e40;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#tribute-info p {
+    margin-bottom: 18px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Timeline Section */
+#timeline-section {
+    background-color: #f0f4f8; /* Background Color 4 */
+    padding: 40px 30px;
+}
+
+.timeline-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.timeline-list li {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+/* Quote Section */
+#quote-section {
+    background-color: #ff6e40;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+blockquote {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+blockquote span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1e3d59;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff6e40;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    #main {
+        margin: 0;
+        border-radius: 0;
+    }
+    #title {
+        font-size: 28px;
+    }
+    #tribute-info, #timeline-section {
+        padding: 20px 15px;
+    }
+}

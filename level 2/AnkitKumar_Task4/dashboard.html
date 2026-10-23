@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Ankit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="dash-header">
+            <h2>Welcome to your Dashboard</h2>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </header>
+        
+        <div class="dash-content">
+            <p>Hello, <span id="userWelcome">User</span>! You have successfully logged into the protected system.</p>
+            <div class="card">
+                <h3>Session Status</h3>
+                <p>Status: <span class="badge">Active Session</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check if user is logged in (Session check)
+        const currentUser = localStorage.getItem('currentUser');
+        if (!currentUser) {
+            // Redirect to login page if accessed directly without session
+            window.location.href = 'index.html';
+        } else {
+            document.getElementById('userWelcome').textContent = currentUser;
+        }
+
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('currentUser');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
